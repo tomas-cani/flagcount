@@ -1,14 +1,19 @@
-function createCountriesList(countries, filter) {
+const unvisitedCountries = countries;
+const visitedCountries = [];
+
+function createCountryList(countries) {
   const countriesList = document.createElement('ul');
   countries.forEach((country) => {
-    if (country.name.toLowerCase().includes(filter.toLowerCase())) {
-      const countryElement = document.createElement('p');
-      const countryName = document.createTextNode(country.name);
-      countryElement.appendChild(countryName);
-      countriesList.appendChild(countryElement);
-    }
+    const countryElement = document.createElement('p');
+    const countryName = document.createTextNode(country.name);
+    countryElement.appendChild(countryName);
+    countriesList.appendChild(countryElement);
   });
   return countriesList;
+}
+
+function filterCountries(countries, keyword) {
+  return countries.filter(country => country.name.toLowerCase().includes(keyword.toLowerCase()));
 }
 
 function removeChildren(parent) {
@@ -17,14 +22,14 @@ function removeChildren(parent) {
   }
 }
 
-function renderCountries(event) {
-  const countriesList = createCountriesList(countries, event.target.value);
-  const filteredCountriesElement = document.getElementsByClassName('filtered-countries')[0];
-  removeChildren(filteredCountriesElement);
-  filteredCountriesElement.appendChild(countriesList);
+function renderUnvisitedCountries(event) {
+  const countriesList = createCountryList(filterCountries(unvisitedCountries, event.target.value));
+  const unvisitedCountriesElement = document.getElementsByClassName('unvisited-countries-list')[0];
+  removeChildren(unvisitedCountriesElement);
+  unvisitedCountriesElement.appendChild(countriesList);
 }
 
-const countryFilter = document.getElementsByClassName('country-filter')[0];
-countryFilter.addEventListener('input', renderCountries);
+const countryFilter = document.getElementsByClassName('unvisited-country-filter')[0];
+countryFilter.addEventListener('input', renderUnvisitedCountries);
 
-renderCountries({ target: { value: '' } });
+renderUnvisitedCountries({ target: { value: '' } });
