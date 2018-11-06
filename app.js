@@ -29,7 +29,7 @@ function filterCountries(countries, keyword, visited) {
 }
 
 function onCountriesChange() {
-  const filter = document.querySelector('.unvisited-country-filter').value;
+  const filter = document.querySelector('.unvisited-countries-filter').value;
   renderUnvisitedCountries(filter);
   renderVisitedCountries();
 }
@@ -53,7 +53,7 @@ function renderVisitedCountries() {
   renderCountries(filterCountries(countries, '', true), '.visited-countries');
 }
 
-const countryFilter = document.querySelector('.unvisited-country-filter');
+const countryFilter = document.querySelector('.unvisited-countries-filter');
 countryFilter.addEventListener('input', event => renderUnvisitedCountries(event.target.value));
 
 renderCountries(countries, '.unvisited-countries');

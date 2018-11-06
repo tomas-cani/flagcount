@@ -5,18 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Flag Count</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script defer src="countries.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
-  <section class="traveler-info">
-    <h1>Visited countries:</h1>
-    <section class="visited-countries"></section>
+  <section class="traveler-stats">
+    <h1>Traveler Stats</h1>
   </section>
+
+  <section class="visited-countries">
+    <header class="header">
+      <h2>Visited countries</h2>
+    </header>
+  </section>
+
   <section class="unvisited-countries">
-    <h1>Unvisited countries:</h1>
-    <input class="unvisited-country-filter" type="text">
+    <header class="header">
+      <h2>Unvisited countries</h2>
+      <input class="unvisited-countries-filter" type="text" placeholder="Search">
+    </header>
   </section>
 </body>
 </html>
