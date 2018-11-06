@@ -1,0 +1,14 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visited-countries-count {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.visited-countries-percentage {
+  margin: 10px 0;
+}

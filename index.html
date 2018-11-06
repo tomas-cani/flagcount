@@ -6,6 +6,7 @@
   <title>Flag Count</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="traveler-stats.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script defer src="country-data.js"></script>
   <script defer src="country-list.js"></script>
@@ -15,7 +16,10 @@
 <body>
   <section class="traveler-stats">
     <h1>Traveler Stats</h1>
-    <p>Countries visited: <span class="visited-countries-count">0/195 (0%)</span></p>
+    <section class="score">
+      <p class="visited-countries-count">0/195</p>
+      <p class="visited-countries-percentage">(0%)</p>
+    </section>
   </section>
 
   <section class="visited-countries">
