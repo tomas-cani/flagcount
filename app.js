@@ -2,7 +2,7 @@ function createCountryList(countries) {
   const countryList = document.createElement('section');
   countryList.classList.add('country-list');
   countries.forEach(country => {
-    const countryElement = document.createElement('div');
+    const countryElement = document.createElement('button');
     countryElement.classList.add('country');
     const countryName = document.createTextNode(country.name);
     countryElement.appendChild(countryName);
