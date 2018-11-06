@@ -4,975 +4,1170 @@ var countries = [
     id: 'AFG',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/afg.svg',
+    visited: false
   }, {
     name: 'Albania',
     id: 'ALB',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/alb.svg',
+    visited: false
   }, {
     name: 'Algeria',
     id: 'DZA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/dza.svg',
+    visited: false
   }, {
     name: 'Andorra',
     id: 'AND',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/and.svg',
+    visited: false
   }, {
     name: 'Angola',
     id: 'AGO',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/ago.svg',
+    visited: false
   }, {
     name: 'Antigua and Barbuda',
     id: 'ATG',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/atg.svg',
+    visited: false
   }, {
     name: 'Argentina',
     id: 'ARG',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/arg.svg',
+    visited: false
   }, {
     name: 'Armenia',
     id: 'ARM',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/arm.svg',
+    visited: false
   }, {
     name: 'Australia',
     id: 'AUS',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/aus.svg',
+    visited: false
   }, {
     name: 'Austria',
     id: 'AUT',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/aut.svg',
+    visited: false
   }, {
     name: 'Azerbaijan',
     id: 'AZE',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/aze.svg',
+    visited: false
   }, {
     name: 'Bahamas',
     id: 'BHS',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/bhs.svg',
+    visited: false
   }, {
     name: 'Bahrain',
     id: 'BHR',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/bhr.svg',
+    visited: false
   }, {
     name: 'Bangladesh',
     id: 'BGD',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/bgd.svg',
+    visited: false
   }, {
     name: 'Barbados',
     id: 'BRB',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/brb.svg',
+    visited: false
   }, {
     name: 'Belarus',
     id: 'BLR',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/blr.svg',
+    visited: false
   }, {
     name: 'Belgium',
     id: 'BEL',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/bel.svg',
+    visited: false
   }, {
     name: 'Belize',
     id: 'BLZ',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/blz.svg',
+    visited: false
   }, {
     name: 'Benin',
     id: 'BEN',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/ben.svg',
+    visited: false
   }, {
     name: 'Bhutan',
     id: 'BTN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/btn.svg',
+    visited: false
   }, {
     name: 'Bolivia (Plurinational State of)',
     id: 'BOL',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/bol.svg',
+    visited: false
   }, {
     name: 'Bosnia and Herzegovina',
     id: 'BIH',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/bih.svg',
+    visited: false
   }, {
     name: 'Botswana',
     id: 'BWA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/bwa.svg',
+    visited: false
   }, {
     name: 'Brazil',
     id: 'BRA',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/bra.svg',
+    visited: false
   }, {
     name: 'Brunei Darussalam',
     id: 'BRN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/brn.svg',
+    visited: false
   }, {
     name: 'Bulgaria',
     id: 'BGR',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/bgr.svg',
+    visited: false
   }, {
     name: 'Burkina Faso',
     id: 'BFA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/bfa.svg',
+    visited: false
   }, {
     name: 'Burundi',
     id: 'BDI',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/bdi.svg',
+    visited: false
   }, {
     name: 'Cambodia',
     id: 'KHM',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/khm.svg',
+    visited: false
   }, {
     name: 'Cameroon',
     id: 'CMR',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/cmr.svg',
+    visited: false
   }, {
     name: 'Canada',
     id: 'CAN',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/can.svg',
+    visited: false
   }, {
     name: 'Cabo Verde',
     id: 'CPV',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/cpv.svg',
+    visited: false
   }, {
     name: 'Central African Republic',
     id: 'CAF',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/caf.svg',
+    visited: false
   }, {
     name: 'Chad',
     id: 'TCD',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/tcd.svg',
+    visited: false
   }, {
     name: 'Chile',
     id: 'CHL',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/chl.svg',
+    visited: false
   }, {
     name: 'China',
     id: 'CHN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/chn.svg',
+    visited: false
   }, {
     name: 'Colombia',
     id: 'COL',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/col.svg',
+    visited: false
   }, {
     name: 'Comoros',
     id: 'COM',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/com.svg',
+    visited: false
   }, {
     name: 'Congo',
     id: 'COG',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/cog.svg',
+    visited: false
   }, {
     name: 'Congo (Democratic Republic of the)',
     id: 'COD',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/cod.svg',
+    visited: false
   }, {
     name: 'Costa Rica',
     id: 'CRI',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/cri.svg',
+    visited: false
   }, {
     name: 'Croatia',
     id: 'HRV',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/hrv.svg',
+    visited: false
   }, {
     name: 'Cuba',
     id: 'CUB',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/cub.svg',
+    visited: false
   }, {
     name: 'Cyprus',
     id: 'CYP',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/cyp.svg',
+    visited: false
   }, {
     name: 'Czech Republic',
     id: 'CZE',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/cze.svg',
+    visited: false
   }, {
     name: 'Denmark',
     id: 'DNK',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/dnk.svg',
+    visited: false
   }, {
     name: 'Djibouti',
     id: 'DJI',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/dji.svg',
+    visited: false
   }, {
     name: 'Dominica',
     id: 'DMA',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/dma.svg',
+    visited: false
   }, {
     name: 'Dominican Republic',
     id: 'DOM',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/dom.svg',
+    visited: false
   }, {
     name: 'Ecuador',
     id: 'ECU',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/ecu.svg',
+    visited: false
   }, {
     name: 'Egypt',
     id: 'EGY',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/egy.svg',
+    visited: false
   }, {
     name: 'El Salvador',
     id: 'SLV',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/slv.svg',
+    visited: false
   }, {
     name: 'Equatorial Guinea',
     id: 'GNQ',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/gnq.svg',
+    visited: false
   }, {
     name: 'Eritrea',
     id: 'ERI',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/eri.svg',
+    visited: false
   }, {
     name: 'Estonia',
     id: 'EST',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/est.svg',
+    visited: false
   }, {
     name: 'Ethiopia',
     id: 'ETH',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/eth.svg',
+    visited: false
   }, {
     name: 'Fiji',
     id: 'FJI',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/fji.svg',
+    visited: false
   }, {
     name: 'Finland',
     id: 'FIN',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/fin.svg',
+    visited: false
   }, {
     name: 'France',
     id: 'FRA',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/fra.svg',
+    visited: false
   }, {
     name: 'Gabon',
     id: 'GAB',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/gab.svg',
+    visited: false
   }, {
     name: 'Gambia',
     id: 'GMB',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/gmb.svg',
+    visited: false
   }, {
     name: 'Georgia',
     id: 'GEO',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/geo.svg',
+    visited: false
   }, {
     name: 'Germany',
     id: 'DEU',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/deu.svg',
+    visited: false
   }, {
     name: 'Ghana',
     id: 'GHA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/gha.svg',
+    visited: false
   }, {
     name: 'Greece',
     id: 'GRC',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/grc.svg',
+    visited: false
   }, {
     name: 'Grenada',
     id: 'GRD',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/grd.svg',
+    visited: false
   }, {
     name: 'Guatemala',
     id: 'GTM',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/gtm.svg',
+    visited: false
   }, {
     name: 'Guinea',
     id: 'GIN',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/gin.svg',
+    visited: false
   }, {
     name: 'Guinea-Bissau',
     id: 'GNB',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/gnb.svg',
+    visited: false
   }, {
     name: 'Guyana',
     id: 'GUY',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/guy.svg',
+    visited: false
   }, {
     name: 'Haiti',
     id: 'HTI',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/hti.svg',
+    visited: false
   }, {
     name: 'Holy See',
     id: 'VAT',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/vat.svg',
+    visited: false
   }, {
     name: 'Honduras',
     id: 'HND',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/hnd.svg',
+    visited: false
   }, {
     name: 'Hungary',
     id: 'HUN',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/hun.svg',
+    visited: false
   }, {
     name: 'Iceland',
     id: 'ISL',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/isl.svg',
+    visited: false
   }, {
     name: 'India',
     id: 'IND',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/ind.svg',
+    visited: false
   }, {
     name: 'Indonesia',
     id: 'IDN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/idn.svg',
+    visited: false
   }, {
     name: "Côte d'Ivoire",
     id: 'CIV',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/civ.svg',
+    visited: false
   }, {
     name: 'Iran (Islamic Republic of)',
     id: 'IRN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/irn.svg',
+    visited: false
   }, {
     name: 'Iraq',
     id: 'IRQ',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/irq.svg',
+    visited: false
   }, {
     name: 'Ireland',
     id: 'IRL',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/irl.svg',
+    visited: false
   }, {
     name: 'Israel',
     id: 'ISR',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/isr.svg',
+    visited: false
   }, {
     name: 'Italy',
     id: 'ITA',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/ita.svg',
+    visited: false
   }, {
     name: 'Jamaica',
     id: 'JAM',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/jam.svg',
+    visited: false
   }, {
     name: 'Japan',
     id: 'JPN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/jpn.svg',
+    visited: false
   }, {
     name: 'Jordan',
     id: 'JOR',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/jor.svg',
+    visited: false
   }, {
     name: 'Kazakhstan',
     id: 'KAZ',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/kaz.svg',
+    visited: false
   }, {
     name: 'Kenya',
     id: 'KEN',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/ken.svg',
+    visited: false
   }, {
     name: 'Kiribati',
     id: 'KIR',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/kir.svg',
+    visited: false
   }, {
     name: 'Kuwait',
     id: 'KWT',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/kwt.svg',
+    visited: false
   }, {
     name: 'Kyrgyzstan',
     id: 'KGZ',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/kgz.svg',
+    visited: false
   }, {
     name: "Lao People's Democratic Republic",
     id: 'LAO',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/lao.svg',
+    visited: false
   }, {
     name: 'Latvia',
     id: 'LVA',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/lva.svg',
+    visited: false
   }, {
     name: 'Lebanon',
     id: 'LBN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/lbn.svg',
+    visited: false
   }, {
     name: 'Lesotho',
     id: 'LSO',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/lso.svg',
+    visited: false
   }, {
     name: 'Liberia',
     id: 'LBR',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/lbr.svg',
+    visited: false
   }, {
     name: 'Libya',
     id: 'LBY',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/lby.svg',
+    visited: false
   }, {
     name: 'Liechtenstein',
     id: 'LIE',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/lie.svg',
+    visited: false
   }, {
     name: 'Lithuania',
     id: 'LTU',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/ltu.svg',
+    visited: false
   }, {
     name: 'Luxembourg',
     id: 'LUX',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/lux.svg',
+    visited: false
   }, {
     name: 'Macedonia (the former Yugoslav Republic of)',
     id: 'MKD',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/mkd.svg',
+    visited: false
   }, {
     name: 'Madagascar',
     id: 'MDG',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/mdg.svg',
+    visited: false
   }, {
     name: 'Malawi',
     id: 'MWI',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/mwi.svg',
+    visited: false
   }, {
     name: 'Malaysia',
     id: 'MYS',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/mys.svg',
+    visited: false
   }, {
     name: 'Maldives',
     id: 'MDV',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/mdv.svg',
+    visited: false
   }, {
     name: 'Mali',
     id: 'MLI',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/mli.svg',
+    visited: false
   }, {
     name: 'Malta',
     id: 'MLT',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/mlt.svg',
+    visited: false
   }, {
     name: 'Marshall Islands',
     id: 'MHL',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/mhl.svg',
+    visited: false
   }, {
     name: 'Mauritania',
     id: 'MRT',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/mrt.svg',
+    visited: false
   }, {
     name: 'Mauritius',
     id: 'MUS',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/mus.svg',
+    visited: false
   }, {
     name: 'Mexico',
     id: 'MEX',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/mex.svg',
+    visited: false
   }, {
     name: 'Micronesia (Federated States of)',
     id: 'FSM',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/fsm.svg',
+    visited: false
   }, {
     name: 'Moldova (Republic of)',
     id: 'MDA',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/mda.svg',
+    visited: false
   }, {
     name: 'Monaco',
     id: 'MCO',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/mco.svg',
+    visited: false
   }, {
     name: 'Mongolia',
     id: 'MNG',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/mng.svg',
+    visited: false
   }, {
     name: 'Montenegro',
     id: 'MNE',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/mne.svg',
+    visited: false
   }, {
     name: 'Morocco',
     id: 'MAR',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/mar.svg',
+    visited: false
   }, {
     name: 'Mozambique',
     id: 'MOZ',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/moz.svg',
+    visited: false
   }, {
     name: 'Myanmar',
     id: 'MMR',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/mmr.svg',
+    visited: false
   }, {
     name: 'Namibia',
     id: 'NAM',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/nam.svg',
+    visited: false
   }, {
     name: 'Nauru',
     id: 'NRU',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/nru.svg',
+    visited: false
   }, {
     name: 'Nepal',
     id: 'NPL',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/npl.svg',
+    visited: false
   }, {
     name: 'Netherlands',
     id: 'NLD',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/nld.svg',
+    visited: false
   }, {
     name: 'New Zealand',
     id: 'NZL',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/nzl.svg',
+    visited: false
   }, {
     name: 'Nicaragua',
     id: 'NIC',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/nic.svg',
+    visited: false
   }, {
     name: 'Niger',
     id: 'NER',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/ner.svg',
+    visited: false
   }, {
     name: 'Nigeria',
     id: 'NGA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/nga.svg',
+    visited: false
   }, {
     name: "Korea (Democratic People's Republic of)",
     id: 'PRK',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/prk.svg',
+    visited: false
   }, {
     name: 'Norway',
     id: 'NOR',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/nor.svg',
+    visited: false
   }, {
     name: 'Oman',
     id: 'OMN',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/omn.svg',
+    visited: false
   }, {
     name: 'Pakistan',
     id: 'PAK',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/pak.svg',
+    visited: false
   }, {
     name: 'Palau',
     id: 'PLW',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/plw.svg',
+    visited: false
   }, {
     name: 'Palestine, State of',
     id: 'PSE',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/pse.svg',
+    visited: false
   }, {
     name: 'Panama',
     id: 'PAN',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/pan.svg',
+    visited: false
   }, {
     name: 'Papua New Guinea',
     id: 'PNG',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/png.svg',
+    visited: false
   }, {
     name: 'Paraguay',
     id: 'PRY',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/pry.svg',
+    visited: false
   }, {
     name: 'Peru',
     id: 'PER',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/per.svg',
+    visited: false
   }, {
     name: 'Philippines',
     id: 'PHL',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/phl.svg',
+    visited: false
   }, {
     name: 'Poland',
     id: 'POL',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/pol.svg',
+    visited: false
   }, {
     name: 'Portugal',
     id: 'PRT',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/prt.svg',
+    visited: false
   }, {
     name: 'Qatar',
     id: 'QAT',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/qat.svg',
+    visited: false
   }, {
     name: 'Romania',
     id: 'ROU',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/rou.svg',
+    visited: false
   }, {
     name: 'Russian Federation',
     id: 'RUS',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/rus.svg',
+    visited: false
   }, {
     name: 'Rwanda',
     id: 'RWA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/rwa.svg',
+    visited: false
   }, {
     name: 'Saint Kitts and Nevis',
     id: 'KNA',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/kna.svg',
+    visited: false
   }, {
     name: 'Saint Lucia',
     id: 'LCA',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/lca.svg',
+    visited: false
   }, {
     name: 'Saint Vincent and the Grenadines',
     id: 'VCT',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/vct.svg',
+    visited: false
   }, {
     name: 'Samoa',
     id: 'WSM',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/wsm.svg',
+    visited: false
   }, {
     name: 'San Marino',
     id: 'SMR',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/smr.svg',
+    visited: false
   }, {
     name: 'Sao Tome and Principe',
     id: 'STP',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/stp.svg',
+    visited: false
   }, {
     name: 'Saudi Arabia',
     id: 'SAU',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/sau.svg',
+    visited: false
   }, {
     name: 'Senegal',
     id: 'SEN',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/sen.svg',
+    visited: false
   }, {
     name: 'Serbia',
     id: 'SRB',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/srb.svg',
+    visited: false
   }, {
     name: 'Seychelles',
     id: 'SYC',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/syc.svg',
+    visited: false
   }, {
     name: 'Sierra Leone',
     id: 'SLE',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/sle.svg',
+    visited: false
   }, {
     name: 'Singapore',
     id: 'SGP',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/sgp.svg',
+    visited: false
   }, {
     name: 'Slovakia',
     id: 'SVK',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/svk.svg',
+    visited: false
   }, {
     name: 'Slovenia',
     id: 'SVN',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/svn.svg',
+    visited: false
   }, {
     name: 'Solomon Islands',
     id: 'SLB',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/slb.svg',
+    visited: false
   }, {
     name: 'Somalia',
     id: 'SOM',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/som.svg',
+    visited: false
   }, {
     name: 'South Africa',
     id: 'ZAF',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/zaf.svg',
+    visited: false
   }, {
     name: 'Korea (Republic of)',
     id: 'KOR',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/kor.svg',
+    visited: false
   }, {
     name: 'South Sudan',
     id: 'SSD',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/ssd.svg',
+    visited: false
   }, {
     name: 'Spain',
     id: 'ESP',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/esp.svg',
+    visited: false
   }, {
     name: 'Sri Lanka',
     id: 'LKA',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/lka.svg',
+    visited: false
   }, {
     name: 'Sudan',
     id: 'SDN',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/sdn.svg',
+    visited: false
   }, {
     name: 'Suriname',
     id: 'SUR',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/sur.svg',
+    visited: false
   }, {
     name: 'Swaziland',
     id: 'SWZ',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/swz.svg',
+    visited: false
   }, {
     name: 'Sweden',
     id: 'SWE',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/swe.svg',
+    visited: false
   }, {
     name: 'Switzerland',
     id: 'CHE',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/che.svg',
+    visited: false
   }, {
     name: 'Syrian Arab Republic',
     id: 'SYR',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/syr.svg',
+    visited: false
   }, {
     name: 'Tajikistan',
     id: 'TJK',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/tjk.svg',
+    visited: false
   }, {
     name: 'Tanzania, United Republic of',
     id: 'TZA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/tza.svg',
+    visited: false
   }, {
     name: 'Thailand',
     id: 'THA',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/tha.svg',
+    visited: false
   }, {
     name: 'Timor-Leste',
     id: 'TLS',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/tls.svg',
+    visited: false
   }, {
     name: 'Togo',
     id: 'TGO',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/tgo.svg',
+    visited: false
   }, {
     name: 'Tonga',
     id: 'TON',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/ton.svg',
+    visited: false
   }, {
     name: 'Trinidad and Tobago',
     id: 'TTO',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/tto.svg',
+    visited: false
   }, {
     name: 'Tunisia',
     id: 'TUN',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/tun.svg',
+    visited: false
   }, {
     name: 'Turkey',
     id: 'TUR',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/tur.svg',
+    visited: false
   }, {
     name: 'Turkmenistan',
     id: 'TKM',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/tkm.svg',
+    visited: false
   }, {
     name: 'Tuvalu',
     id: 'TUV',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/tuv.svg',
+    visited: false
   }, {
     name: 'Uganda',
     id: 'UGA',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/uga.svg',
+    visited: false
   }, {
     name: 'Ukraine',
     id: 'UKR',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/ukr.svg',
+    visited: false
   }, {
     name: 'United Arab Emirates',
     id: 'ARE',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/are.svg',
+    visited: false
   }, {
     name: 'United Kingdom of Great Britain and Northern Ireland',
     id: 'GBR',
     region: 'Europe',
     flag: 'https://restcountries.eu/data/gbr.svg',
+    visited: false
   }, {
     name: 'United States of America',
     id: 'USA',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/usa.svg',
+    visited: false
   }, {
     name: 'Uruguay',
     id: 'URY',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/ury.svg',
+    visited: false
   }, {
     name: 'Uzbekistan',
     id: 'UZB',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/uzb.svg',
+    visited: false
   }, {
     name: 'Vanuatu',
     id: 'VUT',
     region: 'Oceania',
     flag: 'https://restcountries.eu/data/vut.svg',
+    visited: false
   }, {
     name: 'Venezuela (Bolivarian Republic of)',
     id: 'VEN',
     region: 'Americas',
     flag: 'https://restcountries.eu/data/ven.svg',
+    visited: false
   }, {
     name: 'Viet Nam',
     id: 'VNM',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/vnm.svg',
+    visited: false
   }, {
     name: 'Yemen',
     id: 'YEM',
     region: 'Asia',
     flag: 'https://restcountries.eu/data/yem.svg',
+    visited: false
   }, {
     name: 'Zambia',
     id: 'ZMB',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/zmb.svg',
+    visited: false
   }, {
     name: 'Zimbabwe',
     id: 'ZWE',
     region: 'Africa',
     flag: 'https://restcountries.eu/data/zwe.svg',
+    visited: false
   },
 ];
