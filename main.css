@@ -22,39 +22,3 @@ body {
   border-color: #ddd;
   outline:0;
 }
-
-.country {
-  border: none;
-  border-radius: 16px;
-  cursor: pointer;
-  font-size: inherit;
-  margin: 5px;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.visited-countries .country {
-  background-color: #a5d6a7;
-}
-
-.visited-countries .country:hover {
-  background-color: #c8e6c9;
-}
-
-.visited-countries .country:focus {
-  background-color: #81c784;
-  outline:0;
-}
-
-.unvisited-countries .country {
-  background-color: #eee;
-}
-
-.unvisited-countries .country:hover {
-  background-color: #f5f5f5;
-}
-
-.unvisited-countries .country:focus {
-  background-color: #ddd;
-  outline:0;
-}
