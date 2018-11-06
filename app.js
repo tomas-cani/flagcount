@@ -11,7 +11,7 @@ function onCountriesChange() {
   const filter = document.querySelector('.unvisited-countries-filter').value;
   renderUnvisitedCountries(filter);
   renderVisitedCountries();
-  renderFlagCount();
+  renderVisitedCountriesCount();
 }
 
 function renderCountries(countries, parent) {

@@ -1,4 +1,6 @@
-function renderFlagCount() {
-  const flagCountElement = document.querySelector('.flag-count');
-  flagCountElement.textContent = `${getVisitedCountries().length}/195`;
+function renderVisitedCountriesCount() {
+  const flagCountElement = document.querySelector('.visited-countries-count');
+  const visitedCountriesCount = getVisitedCountries().length;
+  const visitedCountriesPercentage = ((visitedCountriesCount * 100) / 195).toFixed(2);
+  flagCountElement.textContent = `${visitedCountriesCount}/195 (${visitedCountriesPercentage}%)`;
 }
