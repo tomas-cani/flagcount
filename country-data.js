@@ -1,4 +1,4 @@
-var countries = [
+const countryData = [
   {
     name: 'Afghanistan',
     id: 'AFG',

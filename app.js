@@ -1,37 +1,17 @@
-function createCountryList(countries) {
-  const countryList = document.createElement('section');
-  countryList.classList.add('country-list');
-  countries.forEach(country => {
-    const countryElement = document.createElement('button');
-    countryElement.classList.add('country');
-    const countryName = document.createTextNode(country.name);
-    countryElement.appendChild(countryName);
-    countryList.appendChild(countryElement);
-  });
-  addEventListenerToCountryList(countryList);
-  return countryList;
-}
-
-function addEventListenerToCountryList(countryList) {
-  countryList.addEventListener('click', event => {
-    const target = event.target;
-    if (target.matches('.country')) {
-      const country = countries.find(country => country.name === target.textContent);
-      country.visited = !country.visited;
-      onCountriesChange();
-    }
-  });
-}
-
 function filterCountries(countries, keyword, visited) {
   return countries.filter(country =>
     country.name.toLowerCase().includes(keyword.toLowerCase()) && country.visited === visited);
+}
+
+function getVisitedCountries() {
+  return filterCountries(countryData, '', true);
 }
 
 function onCountriesChange() {
   const filter = document.querySelector('.unvisited-countries-filter').value;
   renderUnvisitedCountries(filter);
   renderVisitedCountries();
+  renderFlagCount();
 }
 
 function renderCountries(countries, parent) {
@@ -46,14 +26,14 @@ function renderCountries(countries, parent) {
 }
 
 function renderUnvisitedCountries(filter) {
-  renderCountries(filterCountries(countries, filter, false), '.unvisited-countries');
+  renderCountries(filterCountries(countryData, filter, false), '.unvisited-countries');
 }
 
 function renderVisitedCountries() {
-  renderCountries(filterCountries(countries, '', true), '.visited-countries');
+  renderCountries(getVisitedCountries(), '.visited-countries');
 }
 
 const countryFilter = document.querySelector('.unvisited-countries-filter');
 countryFilter.addEventListener('input', event => renderUnvisitedCountries(event.target.value));
 
-renderCountries(countries, '.unvisited-countries');
+renderCountries(countryData, '.unvisited-countries');
