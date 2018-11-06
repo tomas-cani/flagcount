@@ -9,9 +9,10 @@ function getVisitedCountries() {
 
 function onCountriesChange() {
   const filter = document.querySelector('.unvisited-countries-filter').value;
+  const visitedCountries = getVisitedCountries();
   renderUnvisitedCountries(filter);
-  renderVisitedCountries();
-  renderVisitedCountriesCount();
+  renderVisitedCountries(visitedCountries);
+  renderTravelerStats(visitedCountries);
 }
 
 function renderCountries(countries, parent) {
@@ -29,8 +30,8 @@ function renderUnvisitedCountries(filter) {
   renderCountries(filterCountries(countryData, filter, false), '.unvisited-countries');
 }
 
-function renderVisitedCountries() {
-  renderCountries(getVisitedCountries(), '.visited-countries');
+function renderVisitedCountries(visitedCountries) {
+  renderCountries(visitedCountries, '.visited-countries');
 }
 
 const countryFilter = document.querySelector('.unvisited-countries-filter');

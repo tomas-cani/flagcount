@@ -12,3 +12,8 @@
 .visited-countries-percentage {
   margin: 10px 0;
 }
+
+.continent-breakdown {
+  display: flex;
+  justify-content: space-around;
+}
