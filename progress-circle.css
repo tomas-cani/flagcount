@@ -1,0 +1,36 @@
+.progress-circle {
+  position: relative;
+  border: 5px solid transparent;
+  background: #fff;
+  background-clip: padding-box;
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+}
+
+.progress-circle .semicircle {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  content: '';
+  border-radius: 50%;
+}
+
+.progress-circle .semicircle.top {
+  z-index: -1;
+}
+
+.progress-circle .semicircle.top.empty {
+  background: linear-gradient(to left, transparent 50%, #eee 50%);
+}
+
+.progress-circle .semicircle.top.filling {
+  background: linear-gradient(to left,  #4fc3f7 50%, transparent 50%);
+}
+
+.progress-circle .semicircle.bottom {
+  background: linear-gradient(to left, #eee 50%,  #4fc3f7 50%);
+  z-index: -2;
+}

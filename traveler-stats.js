@@ -1,3 +1,4 @@
+const worldCountriesCount = countryData.length;
 const continents = [
   {
     name: 'Africa',
@@ -30,16 +31,17 @@ function renderScore() {
   const visitedCountriesCountElement = document.querySelector('.visited-countries-count');
   const visitedCountriesPercentageElement = document.querySelector('.visited-countries-percentage');
   const visitedCountriesCount = getVisitedCountries().length;
-  const visitedCountriesPercentage = getPercentage(visitedCountriesCount, 195);
-  visitedCountriesCountElement.textContent = `${visitedCountriesCount}/195`;
+  const visitedCountriesPercentage = getPercentage(visitedCountriesCount, worldCountriesCount);
+  visitedCountriesCountElement.textContent = `${visitedCountriesCount}/${worldCountriesCount}`;
   visitedCountriesPercentageElement.textContent = `(${visitedCountriesPercentage}%)`;
+  setProgress('world', visitedCountriesPercentage);
 }
 
 function renderContinentBreakdown(visitedCountries) {
   continents.forEach(continent => {
     const continentScoreElement = document.querySelector(`.${continent.name.toLowerCase()}-score`);
     const visitedCountriesCount = getVisitedCountriesCountFor(continent.name, visitedCountries);
-    const visitedCountriesPercentage = `(${getPercentage(visitedCountriesCount, continent.count)})%`;
+    const visitedCountriesPercentage = `(${getPercentage(visitedCountriesCount, continent.count)}%)`;
     continentScoreElement.textContent = `${visitedCountriesCount}/${continent.count} ${visitedCountriesPercentage}`;
   });
 }

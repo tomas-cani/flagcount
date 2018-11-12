@@ -6,9 +6,11 @@
   <title>Flag Count</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="progress-circle.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="country.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="traveler-stats.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script defer src="progress-circle.js"></script>
   <script defer src="country-data.js"></script>
   <script defer src="country-list.js"></script>
   <script defer src="traveler-stats.js"></script>
@@ -16,10 +18,11 @@
 </head>
 <body>
   <section class="traveler-stats">
-    <h1>Traveler Stats</h1>
-    <section class="score">
+    <section class="score progress-circle world">
       <p class="visited-countries-count">0/195</p>
       <p class="visited-countries-percentage">(0%)</p>
+      <div class="semicircle top empty"></div>
+      <div class="semicircle bottom"></div>
     </section>
     <section class="continent-breakdown">
       <p>Africa: <span class="africa-score">0/54 (0%)</span></p>
