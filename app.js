@@ -3,21 +3,16 @@ function filterCountries(countries, keyword, visited) {
     country.name.toLowerCase().includes(keyword.toLowerCase()) && country.visited === visited);
 }
 
-function getVisitedCountries() {
-  return filterCountries(countryData, '', true);
-}
-
 function onCountriesChange() {
-  const filter = document.querySelector('.unvisited-countries-filter').value;
-  const visitedCountries = getVisitedCountries();
-  renderUnvisitedCountries(filter);
-  renderVisitedCountries(visitedCountries);
+  const filter = document.querySelector('.countries-filter').value;
+  const countries = getCountries(filter);
+  renderCountries(countries);
   renderTravelerStats(visitedCountries);
 }
 
-function renderCountries(countries, parent) {
+function renderCountries(countries) {
   const countriesList = createCountryList(countries);
-  const parentElement = document.querySelector(parent);
+  const parentElement = document.querySelector('.countries');
   const countriesListElement = parentElement.querySelector('.country-list');
   if (countriesListElement) {
     parentElement.removeChild(countriesListElement);
@@ -26,15 +21,13 @@ function renderCountries(countries, parent) {
   parentElement.appendChild(countriesList);
 }
 
-function renderUnvisitedCountries(filter) {
-  renderCountries(filterCountries(countryData, filter, false), '.unvisited-countries');
+function getCountries(filter) {
+  const visitedCountries = filterCountries(countryData, filter, true);
+  const unvisitedCountries = filterCountries(countryData, filter, false);
+  return [...visitedCountries, ...unvisitedCountries];
 }
 
-function renderVisitedCountries(visitedCountries) {
-  renderCountries(visitedCountries, '.visited-countries');
-}
+const countryFilter = document.querySelector('.countries-filter');
+countryFilter.addEventListener('input', event => renderCountries(getCountries(event.target.value)));
 
-const countryFilter = document.querySelector('.unvisited-countries-filter');
-countryFilter.addEventListener('input', event => renderUnvisitedCountries(event.target.value));
-
-renderCountries(countryData, '.unvisited-countries');
+renderCountries(getCountries(countryFilter.value));

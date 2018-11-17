@@ -8,28 +8,28 @@
   text-decoration: none;
 }
 
-.visited-countries .country {
+.country.visited {
   background-color: #a5d6a7;
 }
 
-.visited-countries .country:hover {
+.country.visited:hover {
   background-color: #c8e6c9;
 }
 
-.visited-countries .country:focus {
+.country.visited:focus {
   background-color: #81c784;
   outline:0;
 }
 
-.unvisited-countries .country {
+.country.unvisited {
   background-color: #eee;
 }
 
-.unvisited-countries .country:hover {
+.country.unvisited:hover {
   background-color: #f5f5f5;
 }
 
-.unvisited-countries .country:focus {
+.country.unvisited:focus {
   background-color: #ddd;
   outline:0;
 }

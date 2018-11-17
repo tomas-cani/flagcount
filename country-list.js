@@ -4,6 +4,7 @@ function createCountryList(countries) {
   countries.forEach(country => {
     const countryElement = document.createElement('button');
     countryElement.classList.add('country');
+    countryElement.classList.add(country.visited ? 'visited' : 'unvisited');
     const countryName = document.createTextNode(country.name);
     countryElement.appendChild(countryName);
     countryList.appendChild(countryElement);

@@ -33,7 +33,7 @@ function renderScore() {
   const visitedCountriesCount = getVisitedCountries().length;
   const visitedCountriesPercentage = getPercentage(visitedCountriesCount, worldCountriesCount);
   visitedCountriesCountElement.textContent = `${visitedCountriesCount}/${worldCountriesCount}`;
-  visitedCountriesPercentageElement.textContent = `(${visitedCountriesPercentage}%)`;
+  visitedCountriesPercentageElement.textContent = `${visitedCountriesPercentage}%`;
   setProgress('world', visitedCountriesPercentage);
 }
 
