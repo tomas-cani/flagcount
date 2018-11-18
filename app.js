@@ -1,11 +1,7 @@
-function filterCountries(countries, keyword, visited) {
-  return countries.filter(country =>
-    country.name.toLowerCase().includes(keyword.toLowerCase()) && country.visited === visited);
-}
-
 function onCountriesChange() {
   const filter = document.querySelector('.countries-filter').value;
   const countries = getCountries(filter);
+  const visitedCountries = getVisitedCountries(filter);
   renderCountries(countries);
   renderTravelerStats(visitedCountries);
 }
@@ -19,12 +15,6 @@ function renderCountries(countries) {
   }
 
   parentElement.appendChild(countriesList);
-}
-
-function getCountries(filter) {
-  const visitedCountries = filterCountries(countryData, filter, true);
-  const unvisitedCountries = filterCountries(countryData, filter, false);
-  return [...visitedCountries, ...unvisitedCountries];
 }
 
 const countryFilter = document.querySelector('.countries-filter');
