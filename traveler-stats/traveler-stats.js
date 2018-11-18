@@ -24,7 +24,7 @@ const continents = [
 
 function renderTravelerStats(visitedCountries) {
   renderScore();
-  renderContinentBreakdown(visitedCountries);
+  renderContinentBreakdowns(visitedCountries);
 }
 
 function renderScore() {
@@ -37,12 +37,16 @@ function renderScore() {
   setProgress('world', visitedCountriesPercentage);
 }
 
-function renderContinentBreakdown(visitedCountries) {
+function renderContinentBreakdowns(visitedCountries) {
+  const continentBreakdownElement = document.querySelector('.continent-breakdown');
+
   continents.forEach(continent => {
-    const continentScoreElement = document.querySelector(`.${continent.name.toLowerCase()}-score`);
     const visitedCountriesCount = getVisitedCountriesCountFor(continent.name, visitedCountries);
     const visitedCountriesPercentage = `(${getPercentage(visitedCountriesCount, continent.count)}%)`;
-    continentScoreElement.textContent = `${visitedCountriesCount}/${continent.count} ${visitedCountriesPercentage}`;
+    const visitedCountriesBreakdown = `${visitedCountriesCount}/${continent.count} ${visitedCountriesPercentage}`;
+    const className = `${continent.name.toLowerCase()}-score`;
+    const continentBreakdownTemplate = `<p class="${className}">${continent.name}: <span>${visitedCountriesBreakdown}</span></p>`;
+    renderElement(continentBreakdownElement, `.${className}`, continentBreakdownTemplate);
   });
 }
 

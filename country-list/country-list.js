@@ -1,4 +1,5 @@
-function renderCountryList(parentElement, { countries }) {
+function renderCountries(countries) {
+  const parentElement = document.querySelector('.countries');
   const countryListTemplate = createCountryList(countries);
   const countryListElement = renderElement(parentElement, '.country-list', countryListTemplate);
   addEventListenerToCountryList(countryListElement, countries);
