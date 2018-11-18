@@ -2,15 +2,15 @@ function createCountryList(countries) {
   const countryList = document.createElement('section');
   countryList.classList.add('country-list');
   countries.forEach(country => {
-    const countryElement = document.createElement('button');
-    countryElement.classList.add('country');
-    countryElement.classList.add(country.visited ? 'visited' : 'unvisited');
-    const countryName = document.createTextNode(country.name);
-    countryElement.appendChild(countryName);
-    countryList.appendChild(countryElement);
+    const countryElement = createCountry(country);
+    countryList.insertAdjacentHTML('beforeend', countryElement);
   });
   addEventListenerToCountryList(countryList, countries);
   return countryList;
+}
+
+function createCountry(country) {
+  return `<button class="country ${country.visited ? 'visited' : 'unvisited'}">${country.name}</button>`;
 }
 
 function addEventListenerToCountryList(countryList, countries) {
