@@ -1,12 +1,12 @@
+function renderCountryList(parentElement, { countries }) {
+  const countryListTemplate = createCountryList(countries);
+  const countryListElement = renderElement(parentElement, '.country-list', countryListTemplate);
+  addEventListenerToCountryList(countryListElement, countries);
+}
+
 function createCountryList(countries) {
-  const countryList = document.createElement('section');
-  countryList.classList.add('country-list');
-  countries.forEach(country => {
-    const countryElement = createCountry(country);
-    countryList.insertAdjacentHTML('beforeend', countryElement);
-  });
-  addEventListenerToCountryList(countryList, countries);
-  return countryList;
+  const countryElements = countries.map(createCountry);
+  return `<section class="country-list">${countryElements.join('')}</section>`;
 }
 
 function createCountry(country) {

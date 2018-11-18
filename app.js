@@ -7,14 +7,8 @@ function onCountriesChange() {
 }
 
 function renderCountries(countries) {
-  const countriesList = createCountryList(countries);
   const parentElement = document.querySelector('.countries');
-  const countriesListElement = parentElement.querySelector('.country-list');
-  if (countriesListElement) {
-    parentElement.removeChild(countriesListElement);
-  }
-
-  parentElement.appendChild(countriesList);
+  renderCountryList(parentElement, { countries });
 }
 
 const countryFilter = document.querySelector('.countries-filter');
