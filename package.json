@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tomas-cani/flagcount/issues"
   },
-  "homepage": "https://github.com/tomas-cani/flagcount#readme"
+  "homepage": "https://github.com/tomas-cani/flagcount#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
