@@ -45,8 +45,9 @@ function renderContinentBreakdowns(visitedCountries) {
     const visitedCountriesPercentage = `(${getPercentage(visitedCountriesCount, continent.count)}%)`;
     const visitedCountriesBreakdown = `${visitedCountriesCount}/${continent.count} ${visitedCountriesPercentage}`;
     const className = `${continent.name.toLowerCase()}-score`;
-    const continentBreakdownTemplate = `<p class="${className}">${continent.name}: <span>${visitedCountriesBreakdown}</span></p>`;
+    const continentBreakdownTemplate = `<p class="${className} progress-bar">${continent.name}: <span>${visitedCountriesBreakdown}</span></p>`;
     renderElement(continentBreakdownElement, `.${className}`, continentBreakdownTemplate);
+    setBarProgress(className, getPercentage(visitedCountriesCount, continent.count));
   });
 }
 
