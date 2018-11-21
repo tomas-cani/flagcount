@@ -1,0 +1,19 @@
+{
+  "name": "flagcount",
+  "version": "1.0.0",
+  "description": "See how many places in the world you visited",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomas-cani/flagcount.git"
+  },
+  "author": "Tomás Cañibano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomas-cani/flagcount/issues"
+  },
+  "homepage": "https://github.com/tomas-cani/flagcount#readme"
+}
